@@ -37,7 +37,7 @@
 #include "Timer/Timer.h"
 #include "Bluetooth/ustdlib.h"
 #include "Bluetooth/Bluetooth.h"
-//#include "HostComm/HostComm.h"
+#include "HostComm/HostComm.h"
 #include "include.h"
 
 #endif /* INCLUDE_H_ */
