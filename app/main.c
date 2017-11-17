@@ -108,7 +108,7 @@ int main()
 	// reference.
 	//Config clock
 	ConfigSystem();
-	Timer_Init();
+//	Timer_Init();
 	ConfigPWM();
 //	SetPWM();
 
@@ -171,7 +171,7 @@ void config_gpio(void)
 {
 
     MRFI_Transmit(&packet, MRFI_TX_TYPE_FORCED); // send package
-    BSP_TOGGLE_LED2();
+//    BSP_TOGGLE_LED2();
 
 //  MRFI_DelayMs(RF_DELAY_TIME);
     SysCtlDelay(SysCtlClockGet()/6000*RF_DELAY_TIME);
@@ -185,6 +185,6 @@ void config_gpio(void)
 void MRFI_RxCompleteISR()
 {
 	//MRFI_Transmit(&packet, MRFI_TX_TYPE_FORCED);
-	BSP_TOGGLE_LED2();
+//	BSP_TOGGLE_LED2();
 
 }
